@@ -1,4 +1,5 @@
-# talkToSupply 
+# talkToSupply
+
 [![Node Version](https://img.shields.io/badge/node-%3E=8.11.2-brightgreen.svg)]()
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 [![npm version](https://badge.fury.io/js/%40eove%2Ftalk-to-supply.svg)](https://badge.fury.io/js/%40eove%2Ftalk-to-supply) [![install size](https://packagephobia.now.sh/badge?p=@eove/talk-to-supply)](https://packagephobia.now.sh/result?p=@eove/talk-to-supply)
@@ -15,8 +16,8 @@ CLI to talk to power supply devices (it6932a, ...)
 
 ```
 brew install zmq
-git clone git@github.com:eove/talk-to-analyzer.git
-cd talk-to-analyzer
+git clone git@github.com:eove/talk-to-supply.git
+cd talk-to-supply
 npm install -g node-gyp
 npm install -g
 ```
@@ -25,8 +26,8 @@ npm install -g
 
 ```
 sudo apt-get install -y libglib2.0-dev libzmq3-dev
-git clone git@github.com:eove/talk-to-analyzer.git
-cd talk-to-analyzer
+git clone git@github.com:eove/talk-to-supply.git
+cd talk-to-supply
 npm install -g node-gyp
 npm install -g
 ```
@@ -39,10 +40,10 @@ To know which USB ports are available on your machine: `talkToSupply list-ports`
 
 ```bash
 /dev/tty.Bluetooth-Incoming-Port
-/dev/tty.usbserial-FTZ8FGPX
+/dev/tty.usbserial-FTHJLQ5I
 ```
 
-Then, just run for example: `talkToSupply com -p /dev/tty.usbserial-FTZ8FGPX -d`
+Then, just run for example: `talkToSupply com -p /dev/tty.usbserial-FTHJLQ5I -d`
 
 - To display debug messages, use the `-d` option
 - You will need to pass a port name with the `-p` option.
@@ -62,4 +63,4 @@ Commands:
     run [command] [args]            Run the given [command], with optional JSON formatted [args] (see. examples)
     examples                        Show command examples
 
-Tip: To be able to connect remotely, run: `talkToSupply com -p /dev/ttyUSB1 -l 0.0.0.0:9876`
+Tip: To be able to connect remotely, run: `talkToSupply com -p /dev/tty.usbserial-FTHJLQ5I -l 0.0.0.0:9876`
