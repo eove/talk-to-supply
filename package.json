@@ -14,11 +14,9 @@
     "url": "git+https://github.com/eove/talk-to-supply.git"
   },
   "keywords": [
-    "analyzer",
-    "pf300",
-    "citrex",
+    "it6932a",
     "cli",
-    "h4"
+    "power"
   ],
   "author": "Peio ROTH <pierreroth64@gmail.com>",
   "license": "MIT",
