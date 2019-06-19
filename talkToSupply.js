@@ -46,7 +46,7 @@ program
       debug.enabled = options.debugEnabled;
       options.deviceType = options.analyzer;
       debug(`creating communicator for device type: ${options.analyzer}`);
-      const communicator = createCommunicator(options);
+      const communicator = createCommunicator(portName, options);
       communicator.event$.subscribe(event => debug('event:', event));
       communicator.answer$.subscribe(answer => debug('answer:', answer));
       communicator.command$.subscribe(event => debug('command:', event));
@@ -59,7 +59,7 @@ program
       );
 
       communicator
-        .open(portName)
+        .open()
         .then(() => {
           server.start();
         })

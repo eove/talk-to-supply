@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/eove/talk-to-supply#readme",
   "dependencies": {
-    "@eove/power-supply-com": "1.1.0",
+    "@eove/power-supply-com": "1.2.0",
     "commander": "2.20.0",
     "cross-env": "5.2.0",
     "debug": "4.1.1",
