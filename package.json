@@ -1,6 +1,6 @@
 {
   "name": "@eove/talk-to-supply",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "CLI to talk to power supply devices (it6932a, ...)",
   "main": "index.js",
   "bin": "./talkToSupply.js",
